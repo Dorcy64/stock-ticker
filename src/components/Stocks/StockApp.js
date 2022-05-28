@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) =>({
 
 function StockApp(){
   const stored_stocks = useSelector(state => state.stocks.value)
+  console.log(stored_stocks)
   // get stocks from stock data value
   const dispatch = useDispatch()
 
