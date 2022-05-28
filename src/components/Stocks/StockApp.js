@@ -47,15 +47,14 @@ function StockApp(){
           let res = await axios.get(api_url, {
               headers: { Accept: "application/json"}
           }).catch(function (error) {
-
-            if (error) {
-                success = false
-                const output = {id: stock_ticker, exists: false}
-                setTableData([output])
-                // render the table with the new data which will be an error
+            // render the table with the new data which will be an error
+            const output = {id: stock_ticker, exists: false}
+            setTableData([output])
+            if (error.status === 404) {          
                 dispatch(addNewStock(output))
                 // add the requested data to redux
             }
+            success = false
           })
 
           if (success){
@@ -122,7 +121,7 @@ function StockApp(){
         <div className="d-flex justify-content-center">
             <div className={classes.container}>
                 <div className="alert w-100 text-center alert-danger fade show" role="alert">
-                    <strong>Holy guacamole!</strong> The stock ticker you entered wasn't found.
+                    <strong>Holy guacamole!</strong> The stock ticker you entered wasn't found or server error.
                 </div>
             </div>
         </div>
