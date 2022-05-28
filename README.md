@@ -27,11 +27,11 @@ Your network URL might not have the same URL as the screenshot and that is compl
 If you have another process running at port 3000 then you might have some other URL (PORT) that screenshot.
 
 
-Runs the app in the development mode.\
+The app will run in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You will need to write the uppecase stock ticker in the search panel press enter or search.\
+You may also see any lint errors in the console, and your stored redux searches.
 
 ## Lambda Function Code
 
