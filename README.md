@@ -17,7 +17,7 @@ yarn start
 npm run start
 ```
 
-![How your terminal should look if everything goes well](https://user-images.githubusercontent.com/1837969/39829900-4155a6d0-5396-11e8-8f1e-f1d108a5e4a9.png)
+![How your terminal should look if everything goes well](https://imagedelivery.net/hnHx9kxJyligwC1X9CPssg/f28c210f-0f81-43fe-dadb-2ed9e609c700/public)
 
 ### Note
 Your network URL might not have the same URL as the screenshot and that is completely fine. It depends on your network.
@@ -94,7 +94,7 @@ def lambda_handler(event, context):
 ## API
 
 ```http
-POST https://bnbghfeg5mbl7naoluen7gqofi0tgsks.lambda-url.us-east-1.on.aws/?
+POST https://bnbghfeg5mbl7naoluen7gqofi0tgsks.lambda-url.us-east-1.on.aws/
 ```
 
 | Parameter         | Type      | Description                                                                    |
