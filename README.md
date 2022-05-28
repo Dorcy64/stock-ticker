@@ -23,7 +23,7 @@ def lambda_handler(event, context):
 		}
 		return {
 	        "Access-Control-Allow-Origin": "*",
-	        "statusCode": 400,
+	        "statusCode": 404,
 	        "body": json.dumps(output)
 	    }
 
@@ -55,6 +55,28 @@ def lambda_handler(event, context):
         "body": json.dumps(output)
     }
 ```
+
+## API
+
+```http
+POST https://bnbghfeg5mbl7naoluen7gqofi0tgsks.lambda-url.us-east-1.on.aws/
+```
+
+| Parameter         | Type      | Description                                                                    |
+|:------------------|:----------|:-------------------------------------------------------------------------------|
+| `stock_ticker`          | `string` | **Required**. Recieves an uppercased stock ticker                                            |
+
+### Status Codes
+
+This API returns the following status codes:
+
+| Status Code | Description |
+| :--- | :--- |
+| 200 | `OK` |
+| 400 | `BAD REQUEST` |
+| 404 | `NOT FOUND` |
+| 500 | `INTERNAL SERVER ERROR` |
+
 
 ## I used getting Started with Create React App
 
