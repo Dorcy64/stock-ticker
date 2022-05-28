@@ -1,3 +1,38 @@
+## Guide
+First of all, make sure you have installed Node and npm / yarn
+
+```sh
+# For Yarn (Highly Recommended)
+yarn
+
+# For npm
+npm install --force --legacy-peer-deps
+```
+
+```sh
+# For Yarn
+yarn start
+
+# For npm
+npm run start
+```
+
+![How your terminal should look if everything goes well](https://user-images.githubusercontent.com/1837969/39829900-4155a6d0-5396-11e8-8f1e-f1d108a5e4a9.png)
+
+### Note
+Your network URL might not have the same URL as the screenshot and that is completely fine. It depends on your network.
+
+
+### Warning
+If you have another process running at port 3000 then you might have some other URL (PORT) that screenshot.
+
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
 ## Lambda Function Code
 
 ```py
@@ -59,7 +94,7 @@ def lambda_handler(event, context):
 ## API
 
 ```http
-POST https://bnbghfeg5mbl7naoluen7gqofi0tgsks.lambda-url.us-east-1.on.aws/
+POST https://bnbghfeg5mbl7naoluen7gqofi0tgsks.lambda-url.us-east-1.on.aws/?
 ```
 
 | Parameter         | Type      | Description                                                                    |
@@ -76,18 +111,3 @@ This API returns the following status codes:
 | 400 | `BAD REQUEST` |
 | 404 | `NOT FOUND` |
 | 500 | `INTERNAL SERVER ERROR` |
-
-
-## I used getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
