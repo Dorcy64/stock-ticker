@@ -1,20 +1,21 @@
 ## Guide
-First of all, make sure you have installed Node and npm / yarn
+First of all, make sure you have installed Node and npm / yarn. 
+Next, download this repo, extract the folder, and open it in your terminal.
 
 ```sh
-# For Yarn (Highly Recommended)
-yarn
-
-# For npm
+# For npm (Highly Recommended)
 npm install --force --legacy-peer-deps
+
+# For Yarn
+yarn
 ```
 
 ```sh
-# For Yarn
-yarn start
-
 # For npm
 npm run start
+
+# For Yarn
+yarn start
 ```
 
 ![How your terminal should look if everything goes well](https://imagedelivery.net/hnHx9kxJyligwC1X9CPssg/f28c210f-0f81-43fe-dadb-2ed9e609c700/public)
